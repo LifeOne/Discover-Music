@@ -1,0 +1,78 @@
+* {
+  font-family: 'Varela Round';
+}
+html,body {
+  background: rgba(151,232,177,1);
+  background: -moz-linear-gradient(top, rgba(151,232,177,1) 0%, rgba(72,187,106,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(151,232,177,1)), color-stop(100%, rgba(72,187,106,1)));
+  background: -webkit-linear-gradient(top, rgba(151,232,177,1) 0%, rgba(72,187,106,1) 100%);
+  background: -o-linear-gradient(top, rgba(151,232,177,1) 0%, rgba(72,187,106,1) 100%);
+  background: -ms-linear-gradient(top, rgba(151,232,177,1) 0%, rgba(72,187,106,1) 100%);
+  background: linear-gradient(to bottom, rgba(151,232,177,1) 0%, rgba(72,187,106,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97e8b1', endColorstr='#48bb6a', GradientType=0 );
+  font-family: 'Varela Round';
+}
+/*body {
+  background: rgba(151,232,177,0.6);
+  background: -moz-linear-gradient(top, rgba(151,232,177,0.6) 0%, rgba(72,187,106,0.6) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(151,232,177,0.6)), color-stop(100%, rgba(72,187,106,0.6)));
+  background: -webkit-linear-gradient(top, rgba(151,232,177,0.6) 0%, rgba(72,187,106,0.6) 100%);
+  background: -o-linear-gradient(top, rgba(151,232,177,0.6) 0%, rgba(72,187,106,0.6) 100%);
+  background: -ms-linear-gradient(top, rgba(151,232,177,0.6) 0%, rgba(72,187,106,0.6) 100%);
+  background: linear-gradient(to bottom, rgba(151,232,177,0.6) 0%, rgba(72,187,106,0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97e8b1', endColorstr='#48bb6a', GradientType=0 );
+  padding: 10px;
+  font-family: 'Varela Round';
+}*/
+.pup {
+  position:absolute;
+  z-index:200; /* aaaalways on top*/
+  padding: 3px;
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 250px;
+  border: 1px solid #3F889D;
+  border-radius: 10px;
+  background-color: #F1FBFE;
+  color: #919191;
+  font-size: 0.95em;
+}
+nav {
+  background-color: white;
+  margin-top: 25px;
+  color: #0088cc;
+}
+nav ul li {
+  padding-top: 13px;
+  padding-right: 20px;
+}
+nav ul li a {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+#nav-logo {
+  display: inline-block;
+  font-size: 30px;
+  padding-left: 25px;
+}
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    opacity: .8;
+    margin-top: 50px;
+}
+.footer p {
+  padding-top: 5px;
+}
+.communities {
+  margin: 50px;
+  background-color: white;
+  height: 100%;
+  border-radius: 15px;
+}
+.fixed-height {
+  height: 50px;
+}
