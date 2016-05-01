@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class home extends CI_Controller {
 
 	public function index() {
 		if($this->session->userdata("logged")) {
@@ -41,6 +41,43 @@ class Home extends CI_Controller {
 		$id = $this->session->userdata['user_id'];
 		$this->load->model('user');
 		return $this->user->get_users_channels($id);
+	}
+
+
+
+
+	public function about() {
+		$this->load->view('pf-about');
+	}
+	public function portfolio() {
+		$this->load->model('portfolio');
+		$tags = $this->portfolio->get_tags();
+		$projects = $this->portfolio->get_projects('all');
+		$data = ["projects" => $projects, "tags" => $tags];
+		$this->load->view('pf-portfolio', $data);
+	}
+	public function skills() {
+		$this->load->view('pf-skills');
+	}
+	public function contact() {
+		$this->load->view('pf-contact');
+	}
+	public function contactme() {
+		$post = $this->input->post();
+		var_dump($post);
+
+		$this->load->library('email');
+		$this->email->from($post['email-from'], "Your Name");
+		$this->email->to('lightOneDS@gmail.com');
+		$this->email->subject('Portfolio Contact');
+		$this->email->message($post['email-msg']);
+
+		if($this->email->send()) {
+			$this->load->view('me');
+		} else {
+			$this->load->view('contact');
+		}
+		// mail('lightoneDS@gmail.com', 'Portfolio Contact', $send);
 	}
 }
 

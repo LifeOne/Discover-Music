@@ -177,6 +177,15 @@
       margin-top: 50px;
       text-align: center;
     }
+    .portfolio {
+      color: black;
+      opacity: .5;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .portfolio:hover {
+      opacity: 1;
+    }
   </style>
 </head>
 <body>
@@ -196,6 +205,7 @@
     </div>
     <div class='text-center'>
       <a href='' class="next fa fa-angle-right fa-4x" id="next-song"></a>
+      <p><a class='portfolio' href='/me'>View my portfolio!</a></p>
     </div>
     <?php } ?>
   </div>

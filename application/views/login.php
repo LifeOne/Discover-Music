@@ -47,7 +47,7 @@
     			<div class="etc-login-form text-center">
     				<p><a href="/register">Create a new account</a></p>
             <span class="a-divider">or</span>
-    				<p><a href="/login/guest">Continue as a guest</a></p>
+    				<p><a href="/me">View my portfolio</a></p>
     			</div>
     		</form>
     	</div>

@@ -45,5 +45,9 @@ $route['settings'] = "home/settings";
 $route['logout'] = "login/logout";
 $route['remove/(:any)'] = "home/remove_channel/$1";
 $route['help'] = "home/help";
+$route['me'] = "home/about";
+$route['portfolio'] = "home/portfolio";
+$route['skills'] = "home/skills";
+$route['contact'] = "home/contact";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
